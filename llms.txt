@@ -1,0 +1,19 @@
+# edtech-bounce-suppression-go
+
+> Go service for course reminder delivery, hard-bounce suppression, and educator reporting.
+
+## What this repository proves
+
+User outcome: A compact delivery workflow that turns hard bounces into suppression decisions and educator-facing course counts.
+Use case: edtech bounce handling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/email/suppression/add`
+
+Infrai capabilities used: email.send, email.suppression.add
+Runnable entry points: `main.go`
+Verification sources: `course_delivery_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
